@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
+
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -10,13 +11,19 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
 }
 
-.part-1{
+.part-1 {
   max-width: 1400px;
-  background-color: rgb(10, 10, 10);
+  margin: 0 auto;
 
+
+}
+
+body {
+  background-color: rgb(10, 10, 10);
 }
 
 /* shared style  */
@@ -33,14 +40,14 @@
 .fitness {
   color: rgb(230, 83, 60);
   font-size: 2.2rem;
- 
+
 }
 
 .navber {
   max-width: 1050px;
   justify-content: space-between;
   margin: 2rem auto;
-  /* border: 2px solid red; */
+
   align-items: center;
 }
 
@@ -74,7 +81,7 @@
 .nav-ar-banner {
   max-width: 1050px;
   margin: auto;
-  /* border: 2px solid red; */
+  justify-content: space-between;
 }
 
 .banner-ar-titel {
@@ -85,9 +92,10 @@
   max-width: 400px;
   margin: 30px auto;
   text-align: start;
-  
+
 }
-.shape{
+
+.shape {
   font-family: 'Miama', sans-serif;
   font-size: 3.2rem;
 }
@@ -99,41 +107,39 @@
   margin-bottom: 30px;
 }
 
-.banner {
-  margin: 30px auto;
-  /* border: 1px solid red; */
-  gap: 80px;
-}
-
 .bannar-image {
-  /* border: 1px solid red; */
+
   position: relative;
 }
-.box-1{
-position: absolute;
-left: -68px;
-bottom: 78px;
+
+.box-1 {
+  position: absolute;
+  left: -68px;
+  bottom: 78px;
 }
-.box-2{
+
+.box-2 {
   position: absolute;
   left: 240px;
   top: 105px;
 }
 
-.Video,.Free {
+.Video,
+.Free {
   background-color: rgb(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
   border-radius: 10px;
   border: none;
 }
 
-.ball{
+.ball {
   height: 30px;
   width: 30px;
   background-color: red;
   border-radius: 50%;
 }
-.Video{
+
+.Video {
   align-items: center;
   width: 150px;
   height: 70px;
@@ -141,57 +147,120 @@ bottom: 78px;
   color: aquamarine;
   /* margin-top: -100px;
   margin-left: -70px; */
- 
+
 }
-.number-1{
+
+.number-1 {
   font-size: 1.5rem;
   font-weight: 900;
 }
-.Free{
+
+.Free {
   width: 150px;
   height: 90px;
   padding: 10px 10px;
   color: aquamarine;
 }
-.number-2{
+
+.number-2 {
   font-size: 2.3rem;
   font-weight: 900;
 
 }
-.bar-1{
+
+.bar-1 {
   display: none;
 }
-.fa-bars{
+
+.fa-bars {
   font-size: 25px;
   color: white;
 }
 
+/* Change-Habits */
+.Change-Habits{
+  max-width: 1050px;
+  margin: 0 auto; 
+}
+.Change-Habits-title {
+  max-width: 670px;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin: 50px auto;
+
+}
+
+.Change-Habits-details {
+  color: white;
+  max-width: 670px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+
+/* .Change-Habits-cards {
+  max-width: 1050px;
+  margin: 10px auto;
+} */
+.Change-Habits-cards{
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.Change-Habits-cards h3,
+p {
+  color: white;
+  text-align: center;
+}
+.Change-Habits-cards h3{
+  font-size: 18px;
+}
+.Change-Habits-cards p{
+  font-size: 10px;
+}
+.Change-Habits-cards img{
+  border-radius: 50%;
+ margin-left: 30px;
+}
+
+
 /* responsive part  */
 
-@media screen and (max-width:576px){
-.nav-option{
-display: none;
-}
-.bar-1 {
-  display: block;
-}
-.nav-ar-banner{
-  flex-direction: column;
-}
-.box-1 {
-  position: absolute;
-  left: 22px;
-  bottom: 181px;
-  border-radius: 20px;
-}
-.box-2 {
-  position: absolute;
-  left: 223px;
-  top: 90px;
-}
-.navber{
-  width: 400px;
-}
-}
+@media screen and (max-width:576px) {
+  .nav-option {
+    display: none;
+  }
 
+  .bar-1 {
+    display: block;
+  }
 
+  .nav-ar-banner {
+    flex-direction: column;
+  }
+
+  .box-1 {
+    position: absolute;
+    left: 22px;
+    bottom: 181px;
+    border-radius: 20px;
+  }
+
+  .box-2 {
+    position: absolute;
+    left: 223px;
+    top: 90px;
+  }
+
+  .navber {
+    width: 400px;
+  }
+  .Change-Habits-cards{
+    margin: 0 auto;
+    grid-template-columns: repeat(2,1fr);
+  }
+ 
+}
