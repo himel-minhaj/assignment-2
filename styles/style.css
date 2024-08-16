@@ -371,6 +371,141 @@ background: rgb(230, 83, 60);
 border: none;
 margin-top: 10px;
 }
+/* Run an Extra Mile Easily */
+.Run-Extra{
+  max-width: 1050px;
+  margin: 0 auto;
+  color:white;
+ gap: 100px;
+ border-radius: 18px;
+
+background: rgb(34, 34, 34);
+}
+.Run-Extra img{
+  width: 80%;
+  border-radius: 10px;
+margin: 10px 40px;
+
+
+}
+.Run-Extra-con{
+  padding: 20px;
+}
+.Run-Extra-titel{
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.btv-4{
+  border-radius: 42px;
+  padding: 10px;
+background: rgb(230, 83, 60);
+margin-top: 10px;
+border: none;
+}
+/* Meet Our Team */
+.Our-Team-titel{
+  font-size: 3rem;
+  font-weight: 900;
+}
+.Our-Team{
+  max-width: 1050px;
+  margin: 0 auto;
+  
+
+}
+.Our-Team-detail,.Our-Team-titel,.trainer{
+color: white;
+text-align: center;
+}
+.trainer-con{
+  max-width: 1050px;
+ 
+ 
+}
+ img{
+  width: 100%;
+  border-radius: 10px;
+  }
+ 
+ .row-1,.row-2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 16px auto;
+  gap: 1rem;
+  
+}
+.row-1 {
+  grid-template-columns: 0.99fr 1.1fr 0.9fr;
+}
+.row-2{
+  grid-template-columns: 1.4fr 0.8fr 1fr; 
+}
+ .trainer-card{
+  position: relative;
+ }
+ .trainer {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  
+}
+.Support-container{
+  color: white;
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  background-color:  rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(8, 250, 218, 0.6);
+  padding: 20px;
+}
+.heading{
+  color:rgb(230, 83, 60);
+}
+.btn{
+
+  position: relative;
+  
+  
+}
+input , button{
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+/* footer  */
+.footer-container{
+  max-width: 1050px;
+  background-color:  rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+ gap: 50px;
+ align-items: center;
+ padding: 20px;
+ 
+ 
+
+}
+.first-p{
+color: white;
+}
+.second h3,.third h3{
+  color: white;
+}
+.second p,.third p{
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-container hr{
+  margin: 2rem auto;
+}
+.Destination-detail{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
 
 
 
@@ -409,7 +544,8 @@ margin-top: 10px;
 
   .Change-Habits-cards {
     margin: 0 auto;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    width: 50%;
   }
   .table-calculator,.BMI-Calculator {
     flex-direction: column;
@@ -418,6 +554,32 @@ margin-top: 10px;
   }
   .input{
     max-width: 200px;
+   
+  }
+  .Run-Extra{
+   flex-direction: column;
+  }
+  .Run-Extra img{
+   align-items: center;
+  
+  
+  }
+  .Our-Team{
+    width: 80%;
+   
+  }
+  .row-1,.row-2{
+    grid-template-columns: 1fr;
+  }
+  .Support-container{
+    width: 250px;
+  }
+  .footer-container{
+    width: 300px;
+  }
+  .footer-con{
+    flex-direction: column;
+    gap: 10px;
   }
 
 }
