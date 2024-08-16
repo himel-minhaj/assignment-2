@@ -178,10 +178,11 @@ body {
 }
 
 /* Change-Habits */
-.Change-Habits{
+.Change-Habits {
   max-width: 1050px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
+
 .Change-Habits-title {
   max-width: 670px;
   font-size: 3rem;
@@ -204,27 +205,173 @@ body {
   max-width: 1050px;
   margin: 10px auto;
 } */
-.Change-Habits-cards{
+.Change-Habits-cards {
   justify-content: space-evenly;
   margin-bottom: 20px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
-.Change-Habits-cards h3,
-p {
+
+.Change-Habits-cards h3 {
   color: white;
   text-align: center;
 }
-.Change-Habits-cards h3{
+
+.Change-Habits-cards h3 {
   font-size: 18px;
 }
-.Change-Habits-cards p{
+
+.Change-Habits-cards p {
   font-size: 10px;
+  color: white;
 }
-.Change-Habits-cards img{
+
+.Change-Habits-cards img {
   border-radius: 50%;
- margin-left: 30px;
+  margin-left: 30px;
 }
+
+/* BMI-Calculator start */
+.BMI-Calculator {
+  max-width: 1350px;
+  margin: 40px auto;
+}
+
+.BMI-Calculator-title,
+.BMI-Calculator-details {
+  color: white;
+  text-align: center;
+}
+
+.BMI-Calculator-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.BMI-Calculator-details {
+  font-size: 1rem;
+}
+
+.table-calculator {
+  background: rgb(34, 34, 34);
+  height: 700px;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+
+.bmi {
+  margin-left: 100px;
+  color: white;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+.table-calculator {
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.Calculate-BMI {
+  color: white;
+  max-width: 500px;
+  height: 300px;
+  ;
+
+}
+
+.Calculate-BMI-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 20px
+}
+
+.Calculate-BMI-details {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.input-1 {
+  justify-content: space-between;
+
+}
+
+.Height,
+.Weight {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  /* max-width: 200px; */
+  width: calc(99%/2);
+  border: none;
+  border-radius: 10px;
+
+}
+
+.input-2 {
+  justify-content: space-between;
+
+}
+
+.age {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  /* max-width: 200px; */
+  width: 49%;
+  border: none;
+  margin-top: 5px;
+  
+}
+
+#sex {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(8, 250, 218, 0.6);
+ width: 50%;
+ border-radius: 10px;
+ margin-top: 5px;
+ border: none;
+}
+
+
+
+
+.factor {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  color: rgba(8, 250, 218, 0.6);
+  margin-top: 5px;
+  border: none;
+}
+.btn{
+  border-radius: 42px;
+padding: 10px;
+background: rgb(230, 83, 60);
+border: none;
+margin-top: 10px;
+}
+
+
 
 
 /* responsive part  */
@@ -258,9 +405,18 @@ p {
   .navber {
     width: 400px;
   }
-  .Change-Habits-cards{
+
+  .Change-Habits-cards {
     margin: 0 auto;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
- 
+  .table-calculator,.BMI-Calculator {
+    flex-direction: column;
+    margin: 0 5px;
+    padding: 10px 10px;
+  }
+  .input{
+    max-width: 200px;
+  }
+
 }
